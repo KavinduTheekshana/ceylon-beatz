@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar-top {
+  background: #141414 0% 0% no-repeat padding-box !important;
+  -webkit-box-shadow: 0px 8px 10px #00000029;
+          box-shadow: 0px 8px 10px #00000029;
+  padding: 20px;
+}
+
+.navbar-top .container .curency img {
+  height: 15px;
+  margin-top: 4px;
+  margin-right: 10px;
+}
+
+.navbar-top .container .curency select {
+  background: #141414;
+  border: transparent;
+  color: #fff;
+  font: normal normal 400 16px/27px Poppins;
+  letter-spacing: 0px;
+}
+
+.navbar-top .container .menu .row {
+  margin: 0;
+  margin-top: 15px;
+}
+
+.navbar-top .container .menu .row .menu-item p {
+  font: normal normal normal 16px/27px Poppins;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.navbar-top .container .menu .row .menu-item img {
+  position: absolute;
+  width: 150px;
+  top: -20px;
+  margin-left: -15px;
+}
+
+.navbar-top .container .cart .row {
+  float: right;
+}
+
+.navbar-top .container .cart .row .icon {
+  margin-top: 5px;
+}
+
+.navbar-top .container .cart .row .icon i {
+  color: #fff;
+  margin: 0 10px;
+}
+
+.navbar-top .container .cart .row .button {
+  margin: 0 10px;
+  background: #e9ba1f 0% 0% no-repeat padding-box;
+  color: #fff;
+  padding: 5px 28px;
+  border-radius: 5px;
+  font: normal normal 500 16px/27px Poppins;
+  letter-spacing: 0px;
+}
+
+#head-section {
+  background: transparent -webkit-gradient(linear, left top, left bottom, from(#0c0141), to(#6c0034)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, #0c0141 0%, #6c0034 100%) 0% 0% no-repeat padding-box;
+}
+
+#head-section .mask {
+  background-image: url("../../assets/image/Mask Group 7@2x.png");
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 10px;
+}
+
+#head-section .mask .search {
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 260px;
+  max-width: 650px;
+}
+
+#head-section .mask .search h1 {
+  font: normal normal bold 53px/80px Poppins;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-align: center;
+}
+
+#head-section .mask .search input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 13px;
+  vertical-align: top;
+}
+
+#head-section .mask .search .wrapper {
+  text-align: center;
+  position: relative;
+  height: 25px;
+  margin-top: 19px;
+  font-size: 0;
+}
+
+#head-section .mask .search .wrapper i {
+  position: absolute;
+  left: 28px;
+  top: 10px;
+}
+
+#head-section .mask .search .search {
+  padding-left: 30px;
+  padding: 0 50px;
+  font-size: 18px;
+  width: 80%;
+  height: 42px;
+  border: 1px solid #b3b3b3;
+  border-radius: 9px 0 0 9px;
+}
+
+#head-section .mask .search .search:focus {
+  outline: none;
+}
+
+#head-section .mask .search .submit {
+  cursor: pointer;
+  border: none;
+  background: #e9ba1f 0% 0% no-repeat padding-box;
+  color: #fff;
+  font-size: 14px;
+  background-size: 35px 35px;
+  border-radius: 0 9px 9px 0;
+  display: inline-block;
+  width: 103px;
+  height: 42px;
+  font: normal normal 600 16px/27px Poppins;
+  letter-spacing: 0px;
+  color: #efefef;
+}
+
+#head-section .mask .music {
+  overflow: hidden;
+  margin: 220px 0px 100px 0px;
+}
+
+#head-section .mask .music .container {
+  padding: 61px 0 10px 0px;
+  overflow: hidden;
+  background: transparent linear-gradient(141deg, #ffffff 0%, #d2d2d2 100%) 0% 0% no-repeat padding-box;
+}
+
+#head-section .mask .music .container h1 {
+  text-align: center;
+  font: normal normal bold 44px/81px Poppins;
+  letter-spacing: 0px;
+  color: #0c0141;
+}
+
+#head-section .mask .music .container .swiper-container .swiper-wrapper {
+  padding: 20px 0px;
+}
+
+#head-section .mask .music .container .swiper-container .swiper-wrapper .swiper-slide {
+  width: 252px;
+  height: 339px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 11px 11px 9px -11px rgba(0, 0, 0, 0.37);
+          box-shadow: 11px 11px 9px -11px rgba(0, 0, 0, 0.37);
+  border-radius: 3px;
+}
+
+#head-section .mask .music .container .swiper-container .swiper-wrapper .swiper-slide .top-image {
+  width: 100%;
+  height: calc(100% - 120px);
+}
+
+#head-section .mask .music .container .swiper-container .swiper-wrapper .swiper-slide .top-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#head-section .mask .music .container .swiper-container .swiper-wrapper .swiper-slide .bottum-details {
+  padding: 10px 15px;
+}
+
+#head-section .mask .music .container .swiper-container .swiper-wrapper .swiper-slide .bottum-details .play-icon {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  background: #e9ba1f 0% 0% no-repeat padding-box;
+  border: 6px solid #e9ba1f;
+  border-radius: 8px;
+  padding: 16px;
+  bottom: 80px;
+  right: 10px;
+}
+
+#head-section .mask .music .container .swiper-container .swiper-wrapper .swiper-slide .bottum-details .row {
+  margin: 0;
+}
+
+#head-section .mask .music .container .swiper-container .swiper-wrapper .swiper-slide .bottum-details .row i {
+  margin: 7px 10px 7px 0px;
+}
+
+#head-section .mask .music .container .swiper-container .swiper-wrapper .swiper-slide .bottum-details h3 {
+  font-family: lora;
+  font-size: 17px;
+  letter-spacing: 0px;
+  color: #1d1d1d;
+  margin: 7px 0px;
+}
+
+#head-section .mask .music .container .swiper-container .swiper-wrapper .swiper-slide .bottum-details .type-time p {
+  display: inline-block;
+  font: normal normal normal 14px/18px Lora;
+  letter-spacing: 0px;
+  color: #8f8f8f;
+}
+
+#head-section .mask .music .container .swiper-container .swiper-wrapper .swiper-slide .bottum-details .type-time .time {
+  float: right;
+}
+
+#head-section .mask .music .container .swiper-container .swiper-button {
+  border: 1px solid #8f8f8f;
+  width: 40px;
+  height: 40px;
+  margin: 0px 20px;
+}
+
+#head-section .mask .music .container .swiper-container .swiper-button::after {
+  font-size: 12px;
+  color: #8f8f8f;
+}
+
+#head-section .mask .music .container .btn-view-all {
+  margin: 60px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#head-section .mask .music .container .btn-view-all a {
+  margin: auto;
+  font: normal normal 600 22px/33px Poppins;
+  letter-spacing: -1.1px;
+  color: #1d1d1d;
+  border: 1px solid #707070;
+  border-radius: 3px;
+  padding: 12px 60px;
+}
+
+#head-section .mask .music .container .new-release {
+  overflow: hidden !important;
+  position: relative;
+}
+
+#head-section .mask .music .container .new-release .background-wave {
+  position: absolute;
+  height: 390px;
+  width: 100%;
+  background-image: url("../../assets/image/background_wave.png");
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center left;
+  overflow: hidden;
+}
+
+#head-section .mask .music .container .new-release .text-new-releases {
+  z-index: 9999;
+  position: relative;
+}
+
+#head-section .mask .music .container .new-release .text-new-releases h1 {
+  z-index: 3;
+  padding-top: 210px;
+}
+
+#head-section .mask .music .container .new-release .new-release-container {
+  margin: 100px 80px;
+}
+
+#head-section .mask .music .container .new-release .new-release-container .row .player-margin {
+  padding: 20px 10px;
+}
+
+#head-section .mask .music .container .new-release .new-release-container .row .player-margin .player {
+  height: 88px;
+  background: #efefef 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  -webkit-box-shadow: 17px 18px 42px 1px rgba(0, 0, 0, 0.19);
+          box-shadow: 17px 18px 42px 1px rgba(0, 0, 0, 0.19);
+  padding: 10px 10px 10px 120px;
+}
+
+#head-section .mask .music .container .new-release .new-release-container .row .player-margin .player .play-button {
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+
+#head-section .mask .music .container .new-release .new-release-container .row .player-margin .player .play-button i {
+  background: #e9ba1f 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  width: 108px;
+  height: 108px;
+  font-size: 43px;
+  color: #fff;
+  padding: 28px 0;
+  margin: auto;
+  text-align: center;
+}
+
+#head-section .mask .music .container .new-release .new-release-container .row .player-margin .player .row {
+  margin: 0;
+}
+
+#head-section .mask .music .container .new-release .new-release-container .row .player-margin .player .row h4 {
+  font-family: lora;
+  font-size: 15px;
+  letter-spacing: 0px;
+  color: #1d1d1d;
+  margin-right: 7px;
+}
+
+#head-section .mask .music .container .new-release .new-release-container .row .player-margin .player .row i {
+  margin: 0 5px;
+}
+
+#head-section .mask .music .container .new-release .new-release-container .row .player-margin .player .type-time {
+  margin-top: 8px;
+}
+
+#head-section .mask .music .container .new-release .new-release-container .row .player-margin .player .type-time p {
+  display: inline-block;
+  font: normal normal normal 14px/18px Lora;
+  letter-spacing: 0px;
+  color: #8f8f8f;
+}
+
+#head-section .mask .music .container .new-release .new-release-container .row .player-margin .player .type-time .time {
+  margin-top: 4px;
+  float: right;
+  margin-right: 10px;
+}
+
+#diffrence {
+  background-image: url("../../assets/image/Mask Group 8@2x.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+  height: 80vh;
+}
+
+#diffrence .black-layer {
+  background: #2a2a2a 0% 0% no-repeat padding-box;
+  mix-blend-mode: multiply;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=styles.css.map */
