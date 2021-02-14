@@ -29,6 +29,8 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="styles/css/styles.css" />
+
+    <link rel="stylesheet" href="plugin/AnimTrap/css/animtrap.css" />
   </head>
   <body>
     <nav class="navbar-top navbar navbar-expand-lg navbar-dark bg-dark">
@@ -46,13 +48,16 @@
         </div>
         <div class="menu col-md-7">
           <div class="row">
-            <div class="menu-item col-md-2"><p>Home</p></div>
-            <div class="menu-item col-md-2"><p>Music</p></div>
-            <div class="menu-item col-md-3">
-              <img src="assets/image/Group 57@2x.png" alt="" />
+            <div class="menu-item col-md-2">
+              <a href="" class="active">Home</a>
             </div>
-            <div class="menu-item col-md-2"><p>About Us</p></div>
-            <div class="menu-item col-md-3"><p>Contact Us</p></div>
+            <div class="menu-item col-md-2"><a href="">Music</a></div>
+            <div class="menu-item col-md-3">
+              <img class="default-logo" src="assets/image/Group 57@2x.png" alt="" />
+              <img class="sticky-logo d-none" src="assets/image/Group 57@2x.png" alt="" />
+            </div>
+            <div class="menu-item col-md-2"><a href="">About Us</a></div>
+            <div class="menu-item col-md-3"><a href="">Contact Us</a></div>
           </div>
         </div>
         <div class="cart col-md-3">
@@ -125,7 +130,7 @@
                   </g>
                 </svg> </i
             ></a>
-            <a href="#" type="button" class="button">Sign Up</a>
+            <a href="#" type="button" class="button-signup">Sign Up</a>
           </div>
         </div>
       </div>
@@ -134,8 +139,8 @@
     <section id="head-section">
       <div class="mask">
         <div class="search">
-          <h1>Find the perfect music for your next project</h1>
-          <div class="wrapper">
+          <h1  data-animscroll="fade-up">Find the perfect music for your next project</h1>
+          <div class="wrapper"  data-animscroll="fade-up">
             <i
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -156,11 +161,10 @@
             <input class="submit" type="submit" value="Search" />
           </div>
         </div>
-        <div class="music">
+        <div class="music"  data-animscroll="fade-up">
           <div class="container">
-            <h1>Trending Tracks</h1>
-
-            <div class="swiper-container">
+            <h1  data-animscroll="fade-up">Trending Tracks</h1>
+            <div class="swiper-container"  data-animscroll="fade-up">
               <div class="row">
                 <div class="col-md-1"></div>
                 <div
@@ -680,17 +684,17 @@
               <div class="swiper-button swiper-button-next"></div>
               <div class="swiper-button swiper-button-prev"></div>
             </div>
-            <div class="btn-view-all">
-              <a href="#" type="button">View All</a>
+            <div class="btn-view-all"  data-animscroll="fade-up">
+              <a href="#" type="button" class="black">View All</a>
             </div>
             <div class="new-release">
               <div class="background-wave"></div>
-              <div class="text-new-releases">
+              <div class="text-new-releases"  data-animscroll="fade-up">
                 <h1>New Releases</h1>
               </div>
               <div class="new-release-container">
                 <div class="row">
-                  <div class="player-margin col-md-4">
+                  <div class="player-margin col-md-4"  data-animscroll="fade-up">
                     <div class="player">
                       <div class="play-button">
                         <i class="fa fa-play" aria-hidden="true"></i>
@@ -737,7 +741,7 @@
                     </div>
                   </div>
 
-                  <div class="player-margin col-md-4">
+                  <div class="player-margin col-md-4" data-animscroll="fade-up">
                     <div class="player">
                       <div class="play-button">
                         <i class="fa fa-play" aria-hidden="true"></i>
@@ -784,7 +788,7 @@
                     </div>
                   </div>
 
-                  <div class="player-margin col-md-4">
+                  <div class="player-margin col-md-4" data-animscroll="fade-up">
                     <div class="player">
                       <div class="play-button">
                         <i class="fa fa-play" aria-hidden="true"></i>
@@ -831,7 +835,7 @@
                     </div>
                   </div>
 
-                  <div class="player-margin col-md-4">
+                  <div class="player-margin col-md-4" data-animscroll="fade-up">
                     <div class="player">
                       <div class="play-button">
                         <i class="fa fa-play" aria-hidden="true"></i>
@@ -877,54 +881,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="player-margin col-md-4">
-                    <div class="player">
-                      <div class="play-button">
-                        <i class="fa fa-play" aria-hidden="true"></i>
-                      </div>
-                      <div class="row">
-                        <h4>Light Up the Way</h4>
-                        <i
-                          ><svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="15.569"
-                            height="14.119"
-                            viewBox="0 0 17.569 16.119"
-                          >
-                            <path
-                              id="Icon_metro-favorite"
-                              data-name="Icon metro-favorite"
-                              d="M13.926,22.546l-1.274-1.155c-4.524-4.107-7.511-6.817-7.511-10.133A4.779,4.779,0,0,1,9.973,6.427a5.271,5.271,0,0,1,3.953,1.832,5.271,5.271,0,0,1,3.953-1.832,4.779,4.779,0,0,1,4.831,4.831c0,3.316-2.987,6.026-7.511,10.133Z"
-                              transform="translate(-5.141 -6.427)"
-                              fill="#8f8f8f"
-                            />
-                          </svg>
-                        </i>
-                        <i
-                          ><svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="21"
-                            viewBox="0 0 30 21"
-                          >
-                            <path
-                              id="Icon_material-playlist-add"
-                              data-name="Icon material-playlist-add"
-                              d="M21,15H3v3H21Zm0-6H3v3H21Zm6,12V15H24v6H18v3h6v6h3V24h6V21ZM3,24H15V21H3Z"
-                              transform="translate(-3 -9)"
-                              fill="#8f8f8f"
-                            />
-                          </svg>
-                        </i>
-                      </div>
-                      <div class="type-time">
-                        <p class="type">Family music /calm</p>
-                        <p class="time">02:34</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="player-margin col-md-4">
+                  <div class="player-margin col-md-4" data-animscroll="fade-up">
                     <div class="player">
                       <div class="play-button">
                         <i class="fa fa-play" aria-hidden="true"></i>
@@ -971,7 +928,7 @@
                     </div>
                   </div>
 
-                  <div class="player-margin col-md-4">
+                  <div class="player-margin col-md-4" data-animscroll="fade-up">
                     <div class="player">
                       <div class="play-button">
                         <i class="fa fa-play" aria-hidden="true"></i>
@@ -1018,7 +975,7 @@
                     </div>
                   </div>
 
-                  <div class="player-margin col-md-4">
+                  <div class="player-margin col-md-4" data-animscroll="fade-up">
                     <div class="player">
                       <div class="play-button">
                         <i class="fa fa-play" aria-hidden="true"></i>
@@ -1065,7 +1022,54 @@
                     </div>
                   </div>
 
-                  <div class="player-margin col-md-4">
+                  <div class="player-margin col-md-4" data-animscroll="fade-up">
+                    <div class="player">
+                      <div class="play-button">
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                      </div>
+                      <div class="row">
+                        <h4>Light Up the Way</h4>
+                        <i
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="15.569"
+                            height="14.119"
+                            viewBox="0 0 17.569 16.119"
+                          >
+                            <path
+                              id="Icon_metro-favorite"
+                              data-name="Icon metro-favorite"
+                              d="M13.926,22.546l-1.274-1.155c-4.524-4.107-7.511-6.817-7.511-10.133A4.779,4.779,0,0,1,9.973,6.427a5.271,5.271,0,0,1,3.953,1.832,5.271,5.271,0,0,1,3.953-1.832,4.779,4.779,0,0,1,4.831,4.831c0,3.316-2.987,6.026-7.511,10.133Z"
+                              transform="translate(-5.141 -6.427)"
+                              fill="#8f8f8f"
+                            />
+                          </svg>
+                        </i>
+                        <i
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="21"
+                            viewBox="0 0 30 21"
+                          >
+                            <path
+                              id="Icon_material-playlist-add"
+                              data-name="Icon material-playlist-add"
+                              d="M21,15H3v3H21Zm0-6H3v3H21Zm6,12V15H24v6H18v3h6v6h3V24h6V21ZM3,24H15V21H3Z"
+                              transform="translate(-3 -9)"
+                              fill="#8f8f8f"
+                            />
+                          </svg>
+                        </i>
+                      </div>
+                      <div class="type-time">
+                        <p class="type">Family music /calm</p>
+                        <p class="time">02:34</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="player-margin col-md-4" data-animscroll="fade-up">
                     <div class="player">
                       <div class="play-button">
                         <i class="fa fa-play" aria-hidden="true"></i>
@@ -1112,8 +1116,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="btn-view-all">
-                  <a href="#" type="button">View All</a>
+                <div class="btn-view-all" data-animscroll="fade-up">
+                  <a href="#" type="button" class="black">View All</a>
                 </div>
               </div>
             </div>
@@ -1126,7 +1130,7 @@
       <div class="black-layer"></div>
       <div class="container">
         <div class="row">
-          <div class="left-text col-md-6">
+          <div class="left-text col-md-6"  data-animscroll="fade-right">
             <h2>Feel</h2>
             <h1>The Difference</h1>
             <p>
@@ -1142,7 +1146,7 @@
             </p>
             <a href="#" type="button">READ MORE ABOUT J&S STUDIOS</a>
           </div>
-          <div class="right-video col-md-6">
+          <div class="right-video col-md-6"  data-animscroll="fade-left">
             <div class="video-back">
               <img src="assets/image/Mask Group 9@2x.png" alt="" />
               <div class="black-glow"></div>
@@ -1154,124 +1158,124 @@
 
     <section id="popular-search">
       <div class="container">
-        <h1>Popular Music Searches</h1>
+        <h1  data-animscroll="fade-up">Popular Music Searches</h1>
         <div class="row">
           <div class="category col-md-2">
-            <div class="item">
+            <div class="item" data-animscroll="fade-up">
               <p>Happy</p>
             </div>
           </div>
 
           <div class="category col-md-2">
-            <div class="item">
+            <div class="item" data-animscroll="fade-up">
               <p>Jazz</p>
             </div>
           </div>
 
           <div class="category col-md-2">
-            <div class="item">
+            <div class="item" data-animscroll="fade-up">
               <p>Action</p>
             </div>
           </div>
 
           <div class="category col-md-2">
-            <div class="item">
+            <div class="item" data-animscroll="fade-up">
               <p>Coperate</p>
             </div>
           </div>
 
           <div class="category col-md-2">
-            <div class="item">
+            <div class="item" data-animscroll="fade-up">
               <p>Classical</p>
             </div>
           </div>
 
           <div class="category col-md-2">
-            <div class="item">
+            <div class="item" data-animscroll="fade-up">
               <p>Horror</p>
             </div>
           </div>
 
           <div class="category col-md-2">
-            <div class="item">
+            <div class="item" data-animscroll="fade-up">
               <p>Country</p>
             </div>
           </div>
 
           <div class="category col-md-2">
-            <div class="item">
+            <div class="item" data-animscroll="fade-up">
               <p>Rock</p>
             </div>
           </div>
 
           <div class="category col-md-2">
-            <div class="item">
+            <div class="item" data-animscroll="fade-up">
               <p>YouTube</p>
             </div>
           </div>
 
           <div class="category col-md-2">
-            <div class="item">
+            <div class="item" data-animscroll="fade-up">
               <p>News</p>
             </div>
           </div>
 
           <div class="category col-md-2">
-            <div class="item">
+            <div class="item" data-animscroll="fade-up">
               <p>Ambiant</p>
             </div>
           </div>
 
           <div class="category col-md-2">
-            <div class="item">
+            <div class="item" data-animscroll="fade-up">
               <p>Sad</p>
             </div>
           </div>
 
           <div class="category col-md-2">
-            <div class="item">
+            <div class="item" data-animscroll="fade-up">
               <p>Folk</p>
             </div>
           </div>
 
           <div class="category col-md-2">
-            <div class="item">
+            <div class="item" data-animscroll="fade-up">
               <p>Folk</p>
             </div>
           </div>
 
           <div class="category col-md-2">
-            <div class="item">
+            <div class="item" data-animscroll="fade-up">
               <p>Cinematic</p>
             </div>
           </div>
           <div class="category col-md-2">
-            <div class="item">
+            <div class="item" data-animscroll="fade-up">
               <p>Drums</p>
             </div>
           </div>
           <div class="category col-md-2">
-            <div class="item">
+            <div class="item" data-animscroll="fade-up">
               <p>Bass</p>
             </div>
           </div>
           <div class="category col-md-2">
-            <div class="item">
+            <div class="item" data-animscroll="fade-up">
               <p>Tradditional</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="customize container">
-        <h1>Customize the way you want</h1>
+      <div class="customize container"  data-animscroll="fade-up">
+        <h1  data-animscroll="fade-up">Customize the way you want</h1>
         <div class="middle-container">
           <div class="row">
-            <div class="left-image col-md-6">
+            <div class="left-image col-md-6" data-animscroll="fade-right">
               <img src="assets/image/Mask Group 10@2x.png" alt="" />
             </div>
             <div class="right-icon col-md-6">
-              <div class="item">
+              <div class="item"  data-animscroll="fade-up">
                 <div class="row">
                   <i
                     ><svg
@@ -1325,7 +1329,7 @@
                 </div>
               </div>
 
-              <div class="item">
+              <div class="item" data-animscroll="fade-up">
                 <div class="row">
                   <i
                     ><svg
@@ -1348,7 +1352,7 @@
                 </div>
               </div>
 
-              <div class="item">
+              <div class="item" data-animscroll="fade-up">
                 <div class="row">
                   <i
                     ><svg
@@ -1373,9 +1377,101 @@
         </div>
       </div>
 
-      
-    <h1>IT'S THAT SIMPLE</h1>
+      <h1  data-animscroll="fade-up">IT'S THAT SIMPLE</h1>
     </section>
+
+
+
+
+    <!-- ----------------- footer ------------------------ -->
+
+    <!-- <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fa fa-chevron-up"
+      aria-hidden="true"></i></i></a> -->
+
+      
+    <footer class="footer">
+      <div class="container bottom_border">
+      <div class="row">
+      <div class=" col-sm-4 col-md col-sm-4  col-12 col" data-animscroll="fade-up">
+      <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+      <!--headin5_amrc-->
+      <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+      <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
+      <p><i class="fa fa-phone"></i>  +91-9999878398  </p>
+      <p><i class="fa fa fa-envelope"></i> info@example.com  </p>
+      
+      
+      </div>
+      
+      
+      <div class=" col-sm-4 col-md  col-6 col" data-animscroll="fade-up">
+      <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+      <!--headin5_amrc-->
+      <ul class="footer_ul_amrc">
+      <li><a href="http://webenlance.com">Image Rectoucing</a></li>
+      <li><a href="http://webenlance.com">Clipping Path</a></li>
+      <li><a href="http://webenlance.com">Hollow Man Montage</a></li>
+      <li><a href="http://webenlance.com">Ebay & Amazon</a></li>
+      <li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
+      <li><a href="http://webenlance.com">Image Cropping</a></li>
+      </ul>
+      <!--footer_ul_amrc ends here-->
+      </div>
+      
+      
+      <div class=" col-sm-4 col-md  col-6 col" data-animscroll="fade-up">
+      <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+      <!--headin5_amrc-->
+      <ul class="footer_ul_amrc">
+      <li><a href="http://webenlance.com">Remove Background</a></li>
+      <li><a href="http://webenlance.com">Shadows & Mirror Reflection</a></li>
+      <li><a href="http://webenlance.com">Logo Design</a></li>
+      <li><a href="http://webenlance.com">Vectorization</a></li>
+      <li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
+      <li><a href="http://webenlance.com">Image Cropping</a></li>
+      </ul>
+      <!--footer_ul_amrc ends here-->
+      </div>
+      
+      
+      <div class=" col-sm-4 col-md  col-12 col" data-animscroll="fade-up">
+      <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+      <!--headin5_amrc ends here-->
+      
+      <ul class="footer_ul2_amrc">
+      <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p></li>
+      <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p></li>
+      <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p></li>
+      </ul>
+      <!--footer_ul2_amrc ends here-->
+      </div>
+      </div>
+      </div>
+      
+      
+      <div class="container" >
+      <ul class="foote_bottom_ul_amrc">
+      <!-- <li><a href="http://webenlance.com">Home</a></li>
+      <li><a href="http://webenlance.com">About</a></li>
+      <li><a href="http://webenlance.com">Services</a></li>
+      <li><a href="http://webenlance.com">Pricing</a></li>
+      <li><a href="http://webenlance.com">Blog</a></li>
+      <li><a href="http://webenlance.com">Contact</a></li> -->
+      </ul>
+      <!--foote_bottom_ul_amrc ends here-->
+      <p  class="text-center">Copyright @2021 | Designed With by <a href="#">Enspirer</a></p>
+      
+      <ul class="social_footer_ul">
+      <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+      <!--social_footer_ul ends here-->
+      </div>
+      
+      </footer>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -1396,6 +1492,8 @@
     ></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="plugin/AnimTrap/js/anim-trap.js"></script>
+    <script src="plugin/AnimTrap/js/anim-scroll.js"></script>
     <script src="js/main.js"></script>
     <script>
       var swiper = new Swiper(".col-swiper-container", {
@@ -1405,6 +1503,15 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+      });
+    </script>
+    <script>
+      ANIMSCROLL.init({
+        easing: "ease-in-out-sine",
+      });
+
+      $(document).ready(function () {
+        $(".rain").makeitsRain();
       });
     </script>
   </body>
