@@ -2001,12 +2001,185 @@ footer p {
 
 #about-section .bottum-content-all {
   padding: 97px 0;
-  background: transparent -webkit-gradient(linear, left top, left bottom, from(#000000), to(#5D012D)) 0% 0% no-repeat padding-box;
-  background: transparent linear-gradient(180deg, #000000 0%, #5D012D 100%) 0% 0% no-repeat padding-box;
+  background: transparent -webkit-gradient(linear, left top, left bottom, from(#000000), to(#5d012d)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, #000000 0%, #5d012d 100%) 0% 0% no-repeat padding-box;
 }
 
 #about-section .bottum-content-all .white-container {
-  background: transparent linear-gradient(130deg, #FFFFFF 0%, #D2D2D2 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(130deg, #ffffff 0%, #d2d2d2 100%) 0% 0% no-repeat padding-box;
   padding: 87px 0;
+}
+
+#about-section .bottum-content-all .white-container .container-top .row {
+  margin: 0 55px;
+}
+
+#about-section .bottum-content-all .white-container .container-top .row img {
+  width: 100%;
+  -webkit-box-shadow: 10px 10px 66px -12px rgba(0, 0, 0, 0.49);
+          box-shadow: 10px 10px 66px -12px rgba(0, 0, 0, 0.49);
+}
+
+#about-section .bottum-content-all .white-container .container-top .row h3 {
+  font: normal normal 600 38px/87px Poppins;
+  letter-spacing: 0px;
+  color: #141414;
+  margin-left: 30px;
+}
+
+#about-section .bottum-content-all .white-container .container-top .row h2 {
+  margin-left: 30px;
+  font: normal normal bold 50px/113px Poppins;
+  letter-spacing: 0px;
+  margin-top: -60px;
+  color: #141414;
+}
+
+#about-section .bottum-content-all .white-container .container-top .row p {
+  margin-left: 30px;
+  font: normal normal normal 15px/30px Poppins;
+  letter-spacing: 0px;
+  color: #141414;
+}
+
+#about-section .bottum-content-all .white-container .container-top .row .btn-view-all {
+  margin-left: 30px;
+  float: left !important;
+  margin-top: 20px !important;
+}
+
+#about-section .bottum-content-all .white-container .container-bottom {
+  margin-top: 55px;
+}
+
+#about-section .bottum-content-all .white-container .container-bottom .row {
+  margin: 0 55px;
+}
+
+#about-section .bottum-content-all .white-container .container-bottom .row .col-md-5 {
+  margin: auto;
+}
+
+#about-section .bottum-content-all .white-container .container-bottom .row img {
+  width: 100%;
+  -webkit-box-shadow: 10px 10px 66px -12px rgba(0, 0, 0, 0.49);
+          box-shadow: 10px 10px 66px -12px rgba(0, 0, 0, 0.49);
+}
+
+#about-section .bottum-content-all .white-container .container-bottom .row h3 {
+  text-align: left;
+  font: normal normal bold 35px/60px Poppins;
+  letter-spacing: 0px;
+  color: #141414;
+}
+
+#about-section .bottum-content-all .white-container .container-bottom .row p {
+  margin-top: -10px;
+  font: normal normal normal 16px/30px Poppins;
+  letter-spacing: 0px;
+  color: #141414;
+}
+
+#about-section .bottum-content-all .white-container .container-bottom .row .btn-view-all {
+  float: left !important;
+  margin-top: 20px !important;
+}
+
+#about-section .bottum-content-all .our-team {
+  padding: 124px 0 42px 0;
+}
+
+#about-section .bottum-content-all .our-team .container h1 {
+  font: normal normal bold 55px/113px Poppins;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-align: center;
+}
+
+#about-section .bottum-content-all .our-team .container .details-container {
+  position: relative;
+  margin-top: 219px;
+}
+
+#about-section .bottum-content-all .our-team .container .details-container .full-image-placeholder {
+  width: 100%;
+  height: 640px;
+}
+
+#about-section .bottum-content-all .our-team .container .details-container .full-image-placeholder img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#about-section .bottum-content-all .our-team .container .details-container .full-image-placeholder .svg-filter {
+  -webkit-filter: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='a' x='0' y='0' width='1' height='1' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='12' result='b'/%3E%3CfeMorphology operator='dilate' radius='12'/%3E %3CfeMerge%3E%3CfeMergeNode/%3E%3CfeMergeNode in='b'/%3E%3C/feMerge%3E%3C/filter%3E %3C/svg%3E#a");
+  filter: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='a' x='0' y='0' width='1' height='1' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='12' result='b'/%3E%3CfeMorphology operator='dilate' radius='12'/%3E %3CfeMerge%3E%3CfeMergeNode/%3E%3CfeMergeNode in='b'/%3E%3C/feMerge%3E%3C/filter%3E %3C/svg%3E#a");
+}
+
+#about-section .bottum-content-all .our-team .container .details-container .full-image-placeholder .placeholder-content {
+  position: absolute;
+  top: 154px;
+  left: 55px;
+  max-width: 450px;
+}
+
+#about-section .bottum-content-all .our-team .container .details-container .full-image-placeholder .placeholder-content h1 {
+  font: normal normal bold 45px/98px Poppins;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-align: left;
+}
+
+#about-section .bottum-content-all .our-team .container .details-container .full-image-placeholder .placeholder-content h4 {
+  font: italic normal normal 26px/55px Poppins;
+  letter-spacing: 0px;
+  color: #ffffff;
+  line-height: 0;
+  margin-top: -20px;
+}
+
+#about-section .bottum-content-all .our-team .container .details-container .full-image-placeholder .placeholder-content p {
+  margin-top: 53px;
+  font: normal normal normal 16px/30px Poppins;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+#about-section .bottum-content-all .our-team .container .details-container .full-image-placeholder .placeholder-content .social-media-icon-list {
+  margin-top: 43px;
+}
+
+#about-section .bottum-content-all .our-team .container .details-container .full-image-placeholder .placeholder-content .social-media-icon-list .row {
+  margin: 0;
+}
+
+#about-section .bottum-content-all .our-team .container .details-container .full-image-placeholder .placeholder-content .social-media-icon-list .row i {
+  color: #fff;
+  font-size: 32px;
+  padding: 0 10px;
+}
+
+#about-section .bottum-content-all .our-team .container .details-container .team-members {
+  position: absolute;
+  top: -120px;
+  width: 100%;
+}
+
+#about-section .bottum-content-all .our-team .container .details-container .team-members .container .row {
+  margin: 0 170px;
+}
+
+#about-section .bottum-content-all .our-team .container .details-container .team-members .container .row img {
+  margin: auto;
+  cursor: pointer;
+  width: 180px;
+  margin: 0 10px;
+  padding: 5px;
+  -webkit-box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.85);
+          box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.85);
 }
 /*# sourceMappingURL=styles.css.map */
