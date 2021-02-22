@@ -9,6 +9,11 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://wavesurfer-js.org/example/css/style.css" />
+    <link rel="stylesheet" href="https://wavesurfer-js.org/example/css/ribbon.css" /> -->
+    <!-- Material Icon  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -48,7 +53,8 @@
     /> -->
 
     <!-- wavesurfer.js -->
-    <script src="https://unpkg.com/wavesurfer.js/dist/wavesurfer.js"></script>
+    <!-- <script src="https://unpkg.com/wavesurfer.js/dist/wavesurfer.js"></script> -->
+    <script src="plugin/wave/wave.js"></script>
   </head>
   <body>
     <nav class="navbar-top navbar navbar-expand-lg navbar-dark bg-dark">
@@ -883,7 +889,11 @@
               <div class="list-item">
                 <div class="row">
                   <div class="col-md-2">
-                    <div onclick="Onplaye('http://localhost/cb/assets/demo.wav')" class="play-button">
+                    <div
+                    id="player-pop-up"
+                      onclick="Onplaye('http://localhost/cb/assets/demo.wav')"
+                      class="play-button"
+                    >
                       <i class="fa fa-play" aria-hidden="true"></i>
                     </div>
                   </div>
@@ -1013,7 +1023,10 @@
               <div class="list-item">
                 <div class="row">
                   <div class="col-md-2">
-                    <div onclick="Onplaye('http://localhost/cb/assets/demodemo.mp3')" class="play-button">
+                    <div
+                      onclick="Onplaye('http://localhost/cb/assets/demodemo.mp3')"
+                      class="play-button"
+                    >
                       <i class="fa fa-play" aria-hidden="true"></i>
                     </div>
                   </div>
@@ -1676,11 +1689,11 @@
           </div>
         </div>
 
-        <div class="media-player">
+        <div class="media-player" id="media-player">
           <div id="player">
             <div id="waveform">
-              <div class=" progress-striped active" id="progress-bar">
-                <div class="progress-bar progress-bar-info"></div>
+              <div class="progress-striped active" id="progress-bar">
+                <div class="progress-bar progress-bar-info bg-success"></div>
               </div>
 
               <!-- Here be the waveform -->
@@ -1691,59 +1704,14 @@
               <div class="row d-flex justify-content-between">
                 <div class="buttons-name">
                   <div class="row">
-                    <button class="backword">
-                      <i
-                        ><svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="42.439"
-                          height="42.439"
-                          viewBox="0 0 42.439 42.439"
-                        >
-                          <path
-                            id="Icon_material-skip-next"
-                            data-name="Icon material-skip-next"
-                            d="M51.439,51.439,21.378,30.22,51.439,9ZM16.073,9V51.439H9V9Z"
-                            transform="translate(-9 -9)"
-                            fill="#8f8f8f"
-                          />
-                        </svg>
-                      </i>
+                    <button class="btn-control backword">
+                      <i class="fa fa-backward" aria-hidden="true"></i>
                     </button>
-                    <button class="play" data-action="play">
-                      <i
-                        ><svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="77.691"
-                          height="90.971"
-                          viewBox="0 0 77.691 90.971"
-                        >
-                          <path
-                            id="Icon_material-skip-next"
-                            data-name="Icon material-skip-next"
-                            d="M9,99.971,86.691,54.823,9,9Z"
-                            transform="translate(-9 -9)"
-                            fill="#fff"
-                          />
-                        </svg>
-                      </i>
+                    <button class="btn-control play" data-action="play">
+                      <i class="fa fa-play" aria-hidden="true"></i>
                     </button>
-                    <button class="forword">
-                      <i
-                        ><svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="42.439"
-                          height="42.439"
-                          viewBox="0 0 42.439 42.439"
-                        >
-                          <path
-                            id="Icon_material-skip-next"
-                            data-name="Icon material-skip-next"
-                            d="M9,51.439,39.061,30.22,9,9ZM44.366,9V51.439h7.073V9Z"
-                            transform="translate(-9 -9)"
-                            fill="#fff"
-                          />
-                        </svg>
-                      </i>
+                    <button class="btn-control forword">
+                      <i class="fa fa-forward" aria-hidden="true"></i>
                     </button>
                     <div class="name">
                       <h1>Ready for This</h1>
@@ -1765,25 +1733,9 @@
                         <a href="#"
                           ><i class="fa fa-heart" aria-hidden="true"></i
                         ></a>
-                        <a href="#"
-                          ><i
-                            ><svg
-                              id="Icon_material-playlist-add"
-                              data-name="Icon material-playlist-add"
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="43.026"
-                              height="44.118"
-                              viewBox="0 0 63.026 69.118"
-                            >
-                              <path
-                                id="Icon_material-playlist-add-2"
-                                data-name="Icon material-playlist-add"
-                                d="M40.816,21.605H3v6.3H40.816ZM40.816,9H3v6.3H40.816ZM53.421,34.211V21.605h-6.3V34.211H34.513v6.3H47.118V53.118h6.3V40.513H66.026v-6.3ZM3,40.513H28.211v-6.3H3Z"
-                                transform="translate(-3 -9)"
-                                fill="#b9b9b9"
-                              />
-                            </svg> </i
-                        ></a>
+                        <a href="#">
+                          <i class="material-icons">playlist_add</i>
+                        </a>
                         <a href="#"><i class="fas fa-shopping-cart"></i></a>
                       </div>
                     </div>
@@ -1801,9 +1753,8 @@
                     Pause
                 </button> -->
 
-              <div id="equalizer">
-                <!-- Here be equalizer sliders -->
-              </div>
+              <!-- <div id="equalizer">
+              </div> -->
             </div>
           </div>
         </div>
@@ -2031,63 +1982,56 @@
     <script>
       // 'use strict';
 
-// Create an instance
-var wavesurfer;
-var OnplayeVeribe;
+      // Create an instance
+      var wavesurfer;
+      var OnplayeVeribe;
 
-document.addEventListener('DOMContentLoaded', function() {
-    wavesurfer = WaveSurfer.create({
-        container: document.querySelector('#waveform'),
-        waveColor: '#B9B9B9',
-        progressColor: '#E9BA1F'
-    });
-    // Bind play/pause button
+      document.addEventListener("DOMContentLoaded", function () {
+        wavesurfer = WaveSurfer.create({
+          container: document.querySelector("#waveform"),
+          waveColor: "#B9B9B9",
+          progressColor: "#E9BA1F",
+        });
+        // Bind play/pause button
+      });
 
-});
+      function PlayOption() {}
 
-function PlayOption() {
+      function Onplaye(id) {
+        OnplayeVeribe = id;
+        // Load audio from URL
+        wavesurfer.load(OnplayeVeribe);
+        // Log errors
+        wavesurfer.on("error", function (msg) {
+          console.log(msg);
+        });
 
-}
+        document
+          .querySelector('[data-action="play"]')
+          .addEventListener("click", wavesurfer.playPause.bind(wavesurfer));
 
-function Onplaye(id) {
+        // Progress bar
+        (function () {
+          const progressDiv = document.querySelector("#progress-bar");
+          const progressBar = progressDiv.querySelector(".progress-bar");
 
-    
-    OnplayeVeribe = id;
-    // Load audio from URL
-    wavesurfer.load(OnplayeVeribe);
-    // Log errors
-    wavesurfer.on('error', function(msg) {
-        console.log(msg);
-    });
+          var showProgress = function (percent) {
+            // progressDiv.style.display = "block";
+            progressBar.style.width = percent + "%";
+          };
 
-    document
-        .querySelector('[data-action="play"]')
-        .addEventListener('click', wavesurfer.playPause.bind(wavesurfer));
+          var hideProgress = function () {
+            progressDiv.style.display = "none";
+          };
 
-    // Progress bar
-    (function() {
-        const progressDiv = document.querySelector('#progress-bar');
-        const progressBar = progressDiv.querySelector('.progress-bar');
+          wavesurfer.on("loading", showProgress);
+          wavesurfer.on("ready", hideProgress);
+          wavesurfer.on("destroy", hideProgress);
+          wavesurfer.on("error", hideProgress);
+        })();
+      }
 
-        var showProgress = function(percent) {
-            progressDiv.style.display = 'block';
-            progressBar.style.width = percent + '%';
-        };
-
-        var hideProgress = function() {
-            progressDiv.style.display = 'none';
-        };
-
-        wavesurfer.on('loading', showProgress);
-        wavesurfer.on('ready', hideProgress);
-        wavesurfer.on('destroy', hideProgress);
-        wavesurfer.on('error', hideProgress);
-    })();
-
-}
-
-// Init & load audio file
-
+      // Init & load audio file
     </script>
   </body>
 </html>

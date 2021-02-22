@@ -67,6 +67,14 @@ $(document).ready(function () {
 		$("#mail").attr("href","https://www.facebook.com/?ref=tn_tnmn");
 		$("#insta").attr("href","https://www.facebook.com/?ref=tn_tnmn");
 	  });
+
+
+
+	//   media Player ---------------------- 
+
+	$("#player-pop-up").click(function(){
+		$(".media-player").addClass("sticky");
+	  });
   });
 
 
