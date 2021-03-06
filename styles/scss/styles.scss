@@ -2144,3 +2144,108 @@ footer p {
     }
   }
 }
+// ---------------- License Modal -----------------------
+.modal-content {
+  border-radius: 0 !important;
+  background: rgb(224,224,224);
+  background: linear-gradient(149deg, rgba(224,224,224,1) 0%, rgba(161,161,161,1) 0%, rgba(80,80,80,1) 57%);
+  text-align: center;
+  h1 {
+    margin-top: 20px;
+    font: normal normal bold 24px/30px Poppins;
+    color: #fff;
+  }
+  .form-control{
+    max-width: 280px;
+    margin: auto;
+
+      background: transparent !important;
+    color: #fff;
+    option{
+      color: #000;
+    }
+  }
+  .modal-body{
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.397);
+    .play-button {
+      i {
+        background: #e9ba1f 0% 0% no-repeat padding-box;
+        border-radius: 8px;
+        width: 88px;
+        height: 88px;
+        font-size: 33px;
+        color: #fff;
+        padding: 28px 0;
+        margin: auto;
+        text-align: center;
+        transition: all 0.6s;
+        cursor: pointer;
+        &:hover {
+          background: #ffc400;
+        }
+      }
+    }
+    h6 {
+      font-family: lora;
+      font-size: 16px;
+      letter-spacing: 0px;
+      color: #ffffff;
+      text-align: left;
+    }
+    h5 {
+      font-family: lora;
+      font-size: 16px;
+      letter-spacing: 0px;
+      color: #ffffffa1;
+      text-align: left;
+    }
+    h4{
+      font-family: lora;
+      font-size: 12px;
+      letter-spacing: 0px;
+      color: #ffffffa1;
+      text-align: left;
+      span{
+        color: #ffc400;
+      }
+    }
+    h2{
+      font: normal normal 600 22px/55px Poppins;
+      letter-spacing: 0px;
+      color: #ffffff;
+      text-align: left;
+      line-height: 1;
+    }
+    .col-md-6{
+      padding: 0;
+    }
+    
+  }
+  .modal-footer{
+    border-top: transparent;
+    margin: auto;
+  }
+  .btn-cancel-modal{
+    border: 1px solid #fff !important;
+    padding: 10px 30px;
+    background: transparent;
+    font: normal normal 600 16px/55px Poppins;
+    line-height: 1;
+    color: #fff;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  .btn-cart-modal{
+    line-height: 1 !important;
+    border: 1px solid #ffc400 !important;
+    font: normal normal 600 16px/55px Poppins;
+    padding: 10px 30px;
+    background: #ffc400;
+    color: #fff;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
