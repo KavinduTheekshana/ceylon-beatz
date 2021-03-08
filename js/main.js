@@ -75,7 +75,18 @@ $(document).ready(function () {
 	$("#player-pop-up").click(function(){
 		$(".media-player").addClass("sticky");
 	  });
+
+
+
+	  window.onclick = function () {
+		document.getElementById("menu-container").classList.remove("active");
+	  };
+	
+
+
   });
 
-
-  
+  function myFunction2(event) {
+	event.stopPropagation();
+	document.getElementById("menu-container").classList.toggle("active");
+   }

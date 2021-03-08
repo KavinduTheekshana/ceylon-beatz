@@ -312,6 +312,133 @@ body {
   clear: both;
 }
 
+.user-menu-wrap {
+  position: relative;
+  width: 36px;
+  margin: 0 20px;
+}
+
+.mini-photo-wrapper img {
+  border-radius: 50%;
+}
+
+.menu-container {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.menu-container.active {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.user-menu {
+  z-index: 99 !important;
+  position: absolute;
+  right: -105px;
+  list-style: none;
+  padding: 0;
+  background-color: #ffffff;
+  width: 256px;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+.user-menu .profile-highlight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 12px 16px;
+  margin-bottom: 6px;
+}
+
+.user-menu .profile-highlight img {
+  width: 48px;
+  height: 48px;
+  border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.user-menu .profile-highlight .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto 12px;
+}
+
+.user-menu .profile-highlight .details #profile-name {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.user-menu .profile-highlight .details #profile-footer {
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.user-menu .footer {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 6px;
+  margin-top: 6px;
+}
+
+.user-menu .footer .user-menu-link {
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.user-menu .user-menu-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none !important;
+  color: #333333;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 12px 16px;
+}
+
+.user-menu .user-menu-link div {
+  margin: auto 10px;
+}
+
+.user-menu .user-menu-link:hover {
+  background-color: #f5f5f5;
+  color: #333333;
+}
+
+.user-menu:before {
+  position: absolute;
+  top: -16px;
+  left: 120px;
+  display: inline-block;
+  content: "";
+  border: 8px solid transparent;
+  border-bottom-color: #e0e0e0;
+}
+
+.user-menu:after {
+  position: absolute;
+  top: -14px;
+  left: 121px;
+  display: inline-block;
+  content: "";
+  border: 7px solid transparent;
+  border-bottom-color: #ffffff;
+}
+
 .navbar-top.sticky {
   top: 0px !important;
   opacity: 1 !important;

@@ -314,17 +314,161 @@ body {
           padding-left: 5px;
         }
       }
-
       .clearfix:after {
         content: "";
         display: table;
         clear: both;
       }
-
-      // ----------------------------- cart----------------------------------
     }
   }
 }
+
+
+ // ----------------------------- Profile Drop Down Start ----------------------------------
+
+
+
+
+
+ $nav-link-color: #666666;
+  $bg-color: #f3f5f4;
+  $navbar-color: #ffffff;
+  $border-gray: #e0e0e0;
+  $hover-gray: #f5f5f5;
+  $active-gray: #ebebeb;
+
+  $at-blue-light: #00afe9;
+  $at-blue-dark: #006ab8;
+
+  $red: #f44336;
+
+  @mixin border-radius($radius) {
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+  }
+
+  .user-menu-wrap {
+    position: relative;
+    width: 36px;
+    margin: 0 20px;
+  }
+  .mini-photo-wrapper {
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .menu-container {
+    visibility: hidden;
+    opacity: 0;
+
+    &.active {
+      visibility: visible;
+      opacity: 1;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  
+    .user-menu {
+      z-index: 99 !important;
+      position: absolute;
+      right: -105px;
+      list-style: none;
+      padding: 0;
+      background-color: #ffffff;
+      width: 256px;
+      border-radius: 2px;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-top: 20px;
+  
+      .profile-highlight {
+        display: flex;
+        border-bottom: 1px solid $border-gray;
+        padding: 12px 16px;
+        margin-bottom: 6px;
+  
+        img {
+          width: 48px;
+          height: 48px;
+          border-radius: 25px;
+          object-fit: cover;
+          // border-radius: 50%;
+        }
+  
+        .details {
+          display: flex;
+          flex-direction: column;
+          margin: auto 12px;
+  
+          #profile-name {
+            font-weight: 600;
+            font-size: 16px;
+          }
+  
+          #profile-footer {
+            font-weight: 300;
+            font-size: 14px;
+            margin-top: 4px;
+          }
+        }
+      }
+  
+      .footer {
+        border-top: 1px solid $border-gray;
+        padding-top: 6px;
+        margin-top: 6px;
+  
+        .user-menu-link {
+          font-size: 13px;
+          text-decoration: none;
+        }
+      }
+  
+      .user-menu-link {
+        display: flex;
+        text-decoration: none !important;
+        color: #333333;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 12px 16px;
+  
+        div {
+          margin: auto 10px;
+        }
+  
+        &:hover {
+          background-color: $hover-gray;
+          color: #333333;
+        }
+      }
+  
+      &:before {
+        position: absolute;
+        top: -16px;
+        left: 120px;
+        display: inline-block;
+        content: "";
+        border: 8px solid transparent;
+        border-bottom-color: $border-gray;
+      }
+  
+      &:after {
+        position: absolute;
+        top: -14px;
+        left: 121px;
+        display: inline-block;
+        content: "";
+        border: 7px solid transparent;
+        border-bottom-color: #ffffff;
+      }
+    }
+
+
 
 .navbar-top.sticky {
   top: 0px !important;
