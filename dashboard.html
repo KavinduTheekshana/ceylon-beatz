@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ceylon Beatz</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://wavesurfer-js.org/example/css/style.css" />
+    <link rel="stylesheet" href="https://wavesurfer-js.org/example/css/ribbon.css" /> -->
+    <!-- Material Icon  -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- <link rel='stylesheet' href='https://unpkg.com/tailwindcss@1.8.9/dist/tailwind.min.css'> -->
+    <link rel="stylesheet" href="styles/css/styles.css" />
+    <link rel="stylesheet" href="styles/css/tailwind.css" />
+
+    <link rel="stylesheet" href="plugin/AnimTrap/css/animtrap.css" />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://wavesurfer-js.org/example/css/style.css"
+    /> -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://wavesurfer-js.org/example/css/ribbon.css"
+    /> -->
+
+    <!-- wavesurfer.js -->
+    <!-- <script src="https://unpkg.com/wavesurfer.js/dist/wavesurfer.js"></script> -->
+    <script src="plugin/wave/wave.js"></script>
+  </head>
+  <body>
+    <nav class="navbar-top navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <div class="curency col-md-2">
+          <div class="row">
+            <img src="assets/image/Image 15@2x.png" alt="" srcset="" />
+            <select class="form-select" aria-label="Default select example">
+              <option selected>LKR</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+        <div class="menu col-md-7">
+          <div class="row">
+            <div class="menu-item col-md-2">
+              <a href="" class="active">Home</a>
+            </div>
+            <div class="menu-item col-md-2"><a href="">Music</a></div>
+            <div class="menu-item col-md-3">
+              <img
+                class="default-logo"
+                src="assets/image/Group 57@2x.png"
+                alt=""
+              />
+              <img
+                class="sticky-logo d-none"
+                src="assets/image/Group 57@2x.png"
+                alt=""
+              />
+            </div>
+            <div class="menu-item col-md-2"><a href="">About Us</a></div>
+            <div class="menu-item col-md-3"><a href="">Contact Us</a></div>
+          </div>
+        </div>
+        <div class="cart col-md-3">
+          <div class="row">
+            <a href="#" class="icon">
+              <i
+                ><svg
+                  id="Icon_feather-shopping-cart"
+                  data-name="Icon feather-shopping-cart"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="27.768"
+                  height="26.642"
+                  viewBox="0 0 27.768 26.642"
+                >
+                  <path
+                    id="Path_83"
+                    data-name="Path 83"
+                    d="M14.252,31.126A1.126,1.126,0,1,1,13.126,30,1.126,1.126,0,0,1,14.252,31.126Z"
+                    transform="translate(-2.619 -7.11)"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                  />
+                  <path
+                    id="Path_84"
+                    data-name="Path 84"
+                    d="M30.752,31.126A1.126,1.126,0,1,1,29.626,30,1.126,1.126,0,0,1,30.752,31.126Z"
+                    transform="translate(-6.736 -7.11)"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                  />
+                  <path
+                    id="Path_85"
+                    data-name="Path 85"
+                    d="M1.5,1.5H6L9.02,16.574a2.252,2.252,0,0,0,2.252,1.813H22.215a2.252,2.252,0,0,0,2.252-1.813l1.8-9.445H7.129"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                  />
+                </svg>
+              </i>
+            </a>
+            <div class="user-menu-wrap">
+              <a
+                class="mini-photo-wrapper"
+                onclick="myFunction2(event)"
+                href="#"
+                ><img
+                  class="mini-photo"
+                  src="https://images.unsplash.com/photo-1578976563986-fb8769ab695e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                  width="36"
+                  height="36"
+              /></a>
+
+              <div class="menu-container" id="menu-container">
+                <ul class="user-menu">
+                  <div class="profile-highlight">
+                    <img
+                      src="https://images.unsplash.com/photo-1578976563986-fb8769ab695e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                      alt="profile-img"
+                      width="36"
+                      height="36"
+                    />
+                    <div class="details">
+                      <div id="profile-name">Kenny Lee</div>
+                      <div id="profile-footer">Team Hallaway</div>
+                    </div>
+                  </div>
+                  <li class="user-menu__item">
+                    <a class="user-menu-link" href="#">
+                      <img
+                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1604623/trophy.png"
+                        alt="trophy_icon"
+                        width="20"
+                        height="20"
+                      />
+                      <div>Achievements</div>
+                    </a>
+                  </li>
+                  <li class="user-menu__item">
+                    <a class="user-menu-link" href="#">
+                      <img
+                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1604623/team.png"
+                        alt="team_icon"
+                        width="20"
+                        height="20"
+                      />
+                      <div>Team</div>
+                    </a>
+                  </li>
+                  <li class="user-menu__item">
+                    <a class="user-menu-link" href="#">
+                      <img
+                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1604623/book.png"
+                        alt="team_icon"
+                        width="20"
+                        height="20"
+                      />
+                      <div>Log History</div>
+                    </a>
+                  </li>
+                  <div class="footer">
+                    <li class="user-menu__item">
+                      <a class="user-menu-link" href="#" style="color: #f44336"
+                        >Logout</a
+                      >
+                    </li>
+                    <li class="user-menu__item">
+                      <a class="user-menu-link" href="#">Settings</a>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+            </div>
+            <!-- <a href="#" class="icon">
+              <i
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26.311"
+                  height="26.313"
+                  viewBox="0 0 26.311 26.313"
+                >
+                  <g
+                    id="Group_58"
+                    data-name="Group 58"
+                    transform="translate(-2279.032 -2259.344)"
+                  >
+                    <path
+                      id="Path_82"
+                      data-name="Path 82"
+                      d="M2296.561,2272.981a12.709,12.709,0,0,1,4.283,2.281,12.219,12.219,0,0,1,4.495,9.106c.051.926-.322,1.287-1.267,1.287q-11.885,0-23.769,0c-.966,0-1.306-.37-1.268-1.356a12.246,12.246,0,0,1,8.205-11.1c.16-.056.315-.127.553-.225a7.537,7.537,0,0,1-3.1-6.449,7.276,7.276,0,0,1,2.351-5.141,7.511,7.511,0,0,1,10.281,0,7.3,7.3,0,0,1,2.344,5.94A7.547,7.547,0,0,1,2296.561,2272.981Zm6.866,10.768a10.307,10.307,0,0,0-4.812-7.8c-2.421-1.578-5.129-1.724-7.9-1.563a10.35,10.35,0,0,0-9.75,9.364Zm-11.257-22.54a5.656,5.656,0,1,0,5.676,5.63A5.7,5.7,0,0,0,2292.17,2261.21Z"
+                      transform="translate(0 0)"
+                      fill="#fff"
+                    />
+                  </g>
+                </svg> </i
+            ></a> -->
+            <a href="#" type="button" class="button-signup">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ------------------ Body --------------------  -->
+
+    <section id="explore-music">
+      <div class="mask mask-free">
+        <div class="row">
+          <div class="left-filter">
+            <div class="container container-dashboard">
+              <div class="profile-dashboard-row row">
+                <img src="https://source.unsplash.com/100x100" alt="" />
+                <h6>John <br />Mccallister</h6>
+              </div>
+              <div class="menu-item-dashboard">
+                <div class="menu-item row active-menu">
+                  <div class="col-md-2">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <div class="col-md-9"><h5>My Cart</h5></div>
+                </div>
+
+                <div class="menu-item row">
+                  <div class="col-md-2">
+                    <i class="fas fa-shopping-bag"></i>
+                  </div>
+                  <div class="col-md-9"><h5>Purchase History</h5></div>
+                </div>
+
+                <div class="menu-item row">
+                  <div class="col-md-2">
+                    <i class="far fa-user"></i>
+                  </div>
+                  <div class="col-md-9"><h5>Account Settings</h5></div>
+                </div>
+
+                <div class="menu-item row">
+                  <div class="col-md-2">
+                    <i class="far fa-credit-card"></i>
+                  </div>
+                  <div class="col-md-9"><h5>Payment Method</h5></div>
+                </div>
+
+                <div class="menu-item row">
+                  <div class="col-md-2">
+                    <i class="fas fa-history"></i>
+                  </div>
+                  <div class="col-md-9"><h5>Activity Log</h5></div>
+                </div>
+
+                <div class="menu-item row">
+                  <div class="col-md-2">
+                    <i class="fas fa-dollar-sign"></i>
+                  </div>
+                  <div class="col-md-9"><h5>Licence</h5></div>
+                </div>
+
+                <div class="menu-item row">
+                  <div class="col-md-2">
+                    <i class="far fa-question-circle"></i>
+                  </div>
+                  <div class="col-md-9"><h5>Inquiries</h5></div>
+                </div>
+
+                <div class="menu-item row">
+                  <div class="col-md-2">
+                    <i class="fas fa-sign-out-alt"></i>
+                  </div>
+                  <div class="col-md-9"><h5>Sign Out</h5></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="space"></div>
+          </div>
+          <div class="right-result">
+            <div class="container">
+              <h2>My Cart</h2>
+              <div class="space-double"></div>
+              <div class="list-item">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div
+                      id="player-pop-up"
+                      onclick="Onplaye('http://localhost/cb/assets/demo.wav')"
+                      class="play-button"
+                    >
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="col col-md-3">
+                    <div class="text-group-one">
+                      <h6>Ready for This</h6>
+                      <p>R&B</p>
+                    </div>
+                  </div>
+                  <div class="col col-md-2 m-auto">
+                    <div class="text-group-two">
+                      <div class="duration">
+                        <div class="row">
+                          <p>Standard Licence</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-md-1 m-auto">
+                    <div class="text-group-two">
+                      <div class="duration">
+                        <div class="row">
+                          <p>24.28 MB</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 m-auto">
+                    <div class="text-group-four">
+                      <h1>299.50 LKR</h1>
+                    </div>
+                  </div>
+                  <div class="col-md-1 m-auto">
+                    <a href="#"><i class="fas fa-trash"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list-item">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div
+                      id="player-pop-up"
+                      onclick="Onplaye('http://localhost/cb/assets/demo.wav')"
+                      class="play-button"
+                    >
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="col col-md-3">
+                    <div class="text-group-one">
+                      <h6>Ready for This</h6>
+                      <p>R&B</p>
+                    </div>
+                  </div>
+                  <div class="col col-md-2 m-auto">
+                    <div class="text-group-two">
+                      <div class="duration">
+                        <div class="row">
+                          <p>Standard Licence</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-md-1 m-auto">
+                    <div class="text-group-two">
+                      <div class="duration">
+                        <div class="row">
+                          <p>24.28 MB</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 m-auto">
+                    <div class="text-group-four">
+                      <h1>299.50 LKR</h1>
+                    </div>
+                  </div>
+                  <div class="col-md-1 m-auto">
+                    <a href="#"><i class="fas fa-trash"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list-item">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div
+                      id="player-pop-up"
+                      onclick="Onplaye('http://localhost/cb/assets/demo.wav')"
+                      class="play-button"
+                    >
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="col col-md-3">
+                    <div class="text-group-one">
+                      <h6>Ready for This</h6>
+                      <p>R&B</p>
+                    </div>
+                  </div>
+                  <div class="col col-md-2 m-auto">
+                    <div class="text-group-two">
+                      <div class="duration">
+                        <div class="row">
+                          <p>Standard Licence</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-md-1 m-auto">
+                    <div class="text-group-two">
+                      <div class="duration">
+                        <div class="row">
+                          <p>24.28 MB</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 m-auto">
+                    <div class="text-group-four">
+                      <h1>299.50 LKR</h1>
+                    </div>
+                  </div>
+                  <div class="col-md-1 m-auto">
+                    <a href="#"><i class="fas fa-trash"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="row my-cart-bottum">
+                <div class="col-md-5"><p>Have a coupon code?</p></div>
+                <div class="col-md-7">
+                  <div class="row">
+                    <div class="col col-md-6"><h3>Sub Total</h3></div>
+                    <div class="col col-md-6"><h3>4199.00 LKR</h3></div>
+                  </div>
+                  <div class="m-t-15"></div>
+                  <div class="row">
+                    <div class="col col-md-6"><h3>Sub Total</h3></div>
+                    <div class="col col-md-6"><h3>4199.00 LKR</h3></div>
+                  </div>
+                  <div class="space"></div>
+                  <div class="row bottum-button">
+                      <a href="#" class="btn-continue">Continue Browsing</a>
+                      <a href="#" class="btn-checkout">Checkout Now</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------- footer ------------------------ -->
+
+    <!-- <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fa fa-chevron-up"
+      aria-hidden="true"></i></i></a> -->
+
+    <footer class="footer">
+      <div class="container bottom_border">
+        <div class="row">
+          <div
+            class="col-sm-4 col-md col-sm-4 col-12 col"
+            data-animscroll="fade-up"
+          >
+            <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+            <!--headin5_amrc-->
+            <p class="mb10">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s
+            </p>
+            <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35</p>
+            <p><i class="fa fa-phone"></i> +91-9999878398</p>
+            <p><i class="fa fa fa-envelope"></i> info@example.com</p>
+          </div>
+
+          <div class="col-sm-4 col-md col-6 col" data-animscroll="fade-up">
+            <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+            <!--headin5_amrc-->
+            <ul class="footer_ul_amrc">
+              <li><a href="http://webenlance.com">Image Rectoucing</a></li>
+              <li><a href="http://webenlance.com">Clipping Path</a></li>
+              <li><a href="http://webenlance.com">Hollow Man Montage</a></li>
+              <li><a href="http://webenlance.com">Ebay & Amazon</a></li>
+              <li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
+              <li><a href="http://webenlance.com">Image Cropping</a></li>
+            </ul>
+            <!--footer_ul_amrc ends here-->
+          </div>
+
+          <div class="col-sm-4 col-md col-6 col" data-animscroll="fade-up">
+            <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+            <!--headin5_amrc-->
+            <ul class="footer_ul_amrc">
+              <li><a href="http://webenlance.com">Remove Background</a></li>
+              <li>
+                <a href="http://webenlance.com">Shadows & Mirror Reflection</a>
+              </li>
+              <li><a href="http://webenlance.com">Logo Design</a></li>
+              <li><a href="http://webenlance.com">Vectorization</a></li>
+              <li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
+              <li><a href="http://webenlance.com">Image Cropping</a></li>
+            </ul>
+            <!--footer_ul_amrc ends here-->
+          </div>
+
+          <div class="col-sm-4 col-md col-12 col" data-animscroll="fade-up">
+            <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+            <!--headin5_amrc ends here-->
+
+            <ul class="footer_ul2_amrc">
+              <li>
+                <a href="#"
+                  ><i class="fab fa-twitter fleft padding-right"></i>
+                </a>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing...<a href="#"
+                    >https://www.lipsum.com/</a
+                  >
+                </p>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fab fa-twitter fleft padding-right"></i>
+                </a>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing...<a href="#"
+                    >https://www.lipsum.com/</a
+                  >
+                </p>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fab fa-twitter fleft padding-right"></i>
+                </a>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing...<a href="#"
+                    >https://www.lipsum.com/</a
+                  >
+                </p>
+              </li>
+            </ul>
+            <!--footer_ul2_amrc ends here-->
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="foote_bottom_ul_amrc">
+          <!-- <li><a href="http://webenlance.com">Home</a></li>
+      <li><a href="http://webenlance.com">About</a></li>
+      <li><a href="http://webenlance.com">Services</a></li>
+      <li><a href="http://webenlance.com">Pricing</a></li>
+      <li><a href="http://webenlance.com">Blog</a></li>
+      <li><a href="http://webenlance.com">Contact</a></li> -->
+        </ul>
+        <!--foote_bottom_ul_amrc ends here-->
+        <p class="text-center">
+          Copyright @2021 | Designed With by <a href="#">Enspirer</a>
+        </p>
+
+        <ul class="social_footer_ul">
+          <li>
+            <a href="http://webenlance.com"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a href="http://webenlance.com"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="http://webenlance.com"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+        <!--social_footer_ul ends here-->
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="plugin/AnimTrap/js/anim-trap.js"></script>
+    <script src="plugin/AnimTrap/js/anim-scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      var swiper = new Swiper(".col-swiper-container", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      ANIMSCROLL.init({
+        easing: "ease-in-out-sine",
+      });
+    </script>
+    <script>
+      function range() {
+        return {
+          minprice: 0,
+          maxprice: 10000,
+          min: 0,
+          max: 10000,
+          minthumb: 0,
+          maxthumb: 0,
+          mintrigger() {
+            this.validation();
+            this.minprice = Math.min(this.minprice, this.maxprice - 500);
+            this.minthumb =
+              ((this.minprice - this.min) / (this.max - this.min)) * 100;
+          },
+          maxtrigger() {
+            this.validation();
+            this.maxprice = Math.max(this.maxprice, this.minprice + 200);
+            this.maxthumb =
+              100 - ((this.maxprice - this.min) / (this.max - this.min)) * 100;
+          },
+          validation() {
+            if (/^\d*$/.test(this.minprice)) {
+              if (this.minprice > this.max) {
+                this.minprice = 9500;
+              }
+              if (this.minprice < this.min) {
+                this.minprice = this.min;
+              }
+            } else {
+              this.minprice = 0;
+            }
+            if (/^\d*$/.test(this.maxprice)) {
+              if (this.maxprice > this.max) {
+                this.maxprice = this.max;
+              }
+              if (this.maxprice < this.min) {
+                this.maxprice = 200;
+              }
+            } else {
+              this.maxprice = 10000;
+            }
+          },
+        };
+      }
+    </script>
+    <script>
+      // 'use strict';
+
+      // Create an instance
+      var wavesurfer;
+      var OnplayeVeribe;
+
+      document.addEventListener("DOMContentLoaded", function () {
+        wavesurfer = WaveSurfer.create({
+          container: document.querySelector("#waveform"),
+          waveColor: "#B9B9B9",
+          progressColor: "#E9BA1F",
+        });
+        // Bind play/pause button
+      });
+
+      function PlayOption() {}
+
+      function Onplaye(id) {
+        OnplayeVeribe = id;
+        // Load audio from URL
+        wavesurfer.load(OnplayeVeribe);
+        // Log errors
+        wavesurfer.on("error", function (msg) {
+          console.log(msg);
+        });
+
+        document
+          .querySelector('[data-action="play"]')
+          .addEventListener("click", wavesurfer.playPause.bind(wavesurfer));
+
+        // Progress bar
+        (function () {
+          const progressDiv = document.querySelector("#progress-bar");
+          const progressBar = progressDiv.querySelector(".progress-bar");
+
+          var showProgress = function (percent) {
+            // progressDiv.style.display = "block";
+            progressBar.style.width = percent + "%";
+          };
+
+          var hideProgress = function () {
+            progressDiv.style.display = "none";
+          };
+
+          wavesurfer.on("loading", showProgress);
+          wavesurfer.on("ready", hideProgress);
+          wavesurfer.on("destroy", hideProgress);
+          wavesurfer.on("error", hideProgress);
+        })();
+      }
+
+      // Init & load audio file
+    </script>
+  </body>
+</html>
