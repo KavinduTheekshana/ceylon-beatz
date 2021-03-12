@@ -198,14 +198,14 @@
                       <input
                         type="checkbox"
                         class="form-check-input"
-                        id="exampleCheck1"
+                        id="checkme"
                       />
                       <label class="form-check-label" for="exampleCheck1"
                         >By signing up a agree with <a href="#">Terms and conditions.</a> </label>
                     </div>
                   </div>
 
-                  <button type="submit" class="btn btn-primary btn-block">
+                  <button type="submit" disabled="disabled" id="sendNewSms" class="btn btn-primary btn-block">
                     Register
                   </button>
                 </form>
@@ -406,9 +406,19 @@
         easing: "ease-in-out-sine",
       });
 
-      $(document).ready(function () {
-        $(".rain").makeitsRain();
-      });
     </script>
+
+<script>
+   var checker = document.getElementById('checkme');
+ var sendbtn = document.getElementById('sendNewSms');
+ checker.onchange = function(){
+if(this.checked){
+    sendbtn.disabled = false;
+} else {
+    sendbtn.disabled = true;
+}
+
+}
+</script>
   </body>
 </html>
